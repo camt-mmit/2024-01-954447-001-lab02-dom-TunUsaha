@@ -1,3 +1,1 @@
-# Week-02: DOM and JavaScript
-
-652110xxx Pachara Tinamas
+"# 2024-01-954447-001-lab02-dom-TunUsaha" 
