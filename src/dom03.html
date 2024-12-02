@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 03: Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/dom.css" />
+    <script type="application/javascript" src="./js/dom03.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <template class="app-tmpl-input">
+        <div class="app-cmp-input">
+          <label>
+            <b class="app-elem-title"
+              >Number <span class="app-elem-title-no"></span
+            ></b>
+            <input
+              type="number"
+              value="0"
+              class="app-elem-input"
+              placeholder="Enter a number"
+            />
+          </label>
+        </div>
+      </template>
+
+      <div class="app-cmp-inputs-list"></div>
+
+      <div class="app-actions">
+        <button type="button" class="app-cmd-add-input">Add</button>
+      </div>
+
+      <div class="app-result">
+        <label>
+          <b>Result</b>
+          <output class="app-elem-result">0</output>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
