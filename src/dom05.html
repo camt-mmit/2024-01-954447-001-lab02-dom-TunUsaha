@@ -6,10 +6,39 @@
     <title>DOM 05: Module</title>
     <link rel="stylesheet" href="./css/material-symbols.css" />
     <link rel="stylesheet" href="./css/dom.css" />
+    <style>
+      .app-cmp-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .app-cmp-inputs-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .app-cmp-input {
+        margin: 8px;
+      }
+
+      .app-cmd-add-input {
+        margin: 16px 0;
+      }
+      .app-cmd-remove-input {
+        color: red;
+        font-size: 24px;
+        margin-left: 8px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    </style>
     <script type="module" src="./js/dom05.js"></script>
   </head>
   <body>
-    <secion class="app-cmp-section">
+    <section class="app-cmp-section">
       <div>
         <button type="button" class="app-cmd-add-input">Add</button>
       </div>
@@ -18,7 +47,9 @@
         <template class="app-tmpl-input">
           <div class="app-cmp-input">
             <label>
-              <b class="app-elem-title">Number <span class="app-elem-title-no"></span></b>
+              <b class="app-elem-title"
+                >Number <span class="app-elem-title-no"></span
+              ></b>
               <input type="number" value="0" class="app-elem-input" />
             </label>
             <button type="button" class="app-cmd-remove-input">X</button>
@@ -28,10 +59,11 @@
 
       <div>
         <label>
+          <br />
           <b>Result</b>
           <output class="app-elem-result">0</output>
         </label>
       </div>
-    </secion>
+    </section>
   </body>
 </html>
